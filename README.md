@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/7f5f7906440c8eaa5afc6.jpg" alt="Ben-filter-Bot Logo">
+  <img src="https://graph.org/file/43fcca8ee2829dfa4436b.jpg" alt="Ben-filter-Bot Logo">
 </p>
 <h1 align="center">
   BEN-FILTER-BOT
@@ -47,14 +47,14 @@
 - [x] 𝐴𝑢𝑡𝑜 𝐷𝑒𝑙𝑒𝑡𝑒
 - [x] 𝐴𝑛𝑑 𝑀𝑜𝑟𝑒...
 
-<b>𝑇𝑜 𝑘𝑛𝑜𝑤 𝑎𝑏𝑜𝑢𝑡 𝑎𝑙𝑙 𝑓𝑒𝑎𝑡𝑢𝑟𝑒𝑠, 𝐽𝑜𝑖𝑛 𝑜𝑢𝑟 <a href='https://t.me/tamilmovies4Krio'>𝑢𝑝𝑑𝑎𝑡𝑒𝑠 𝑐ℎ𝑎𝑛𝑛𝑒𝑙</a>.</b>
+<b>𝑇𝑜 𝑘𝑛𝑜𝑤 𝑎𝑏𝑜𝑢𝑡 𝑎𝑙𝑙 𝑓𝑒𝑎𝑡𝑢𝑟𝑒𝑠, 𝐽𝑜𝑖𝑛 𝑜𝑢𝑟 <a href='https://t.me/TG_UPDATES1'>𝑢𝑝𝑑𝑎𝑡𝑒𝑠 𝑐ℎ𝑎𝑛𝑛𝑒𝑙</a>.</b>
 
 
 
 ## Note 🏷️
  - <b>Importing this repo instead of forking is strictly prohibited 🚫 Kindly fork and edit as your wish (Must Give Credits for devs) 🙃</b>
  - <b>If you find any bugs or errors, report it to the developer.</b>
-* [![Contact Developer](https://img.shields.io/static/v1?label=Original+Repo&message=On+Github&color=critical)](https://github.com/TeamHMT/Auto-search-tamil-bot)
+* [![Contact Developer](https://img.shields.io/static/v1?label=Original+Repo&message=On+Github&color=critical)](https://github.com/Kushalhk)
 
 
 ## 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠
