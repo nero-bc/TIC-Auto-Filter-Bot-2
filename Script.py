@@ -196,12 +196,8 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name} {file_size}
-╔════ 😉😉😉😉😉 ════╗
- Thanks for using friend 
-  Keep supporting nanba 
-╚════ 😍😍😍😍😍 ════╝</b>""" 
-
+    CAPTION = """<b>📂𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴: {file_name}
+    @TG_LINKS_CHANNEL</b>"""
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
 IMDb Data:
