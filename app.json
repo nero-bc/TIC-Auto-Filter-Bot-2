@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/TeamHMT/Auto-search-tamil-bot",
-    "repository": "https://github.com/TeamHMT/Auto-search-tamil-bot",
+    "website": "https://github.com/Kushalhk/Shareus",
+    "repository": "https://github.com/Kushalhk/Shareus",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
