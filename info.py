@@ -22,8 +22,8 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 99999))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', '')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/41a08d01363c18ca909f1.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://te.legra.ph/file/6f55d902f9bf2d0afd4bb.mp4")
+NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/e4531f5229d8c23ab16a8.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/37238c5f37e24dc72819c.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
@@ -49,11 +49,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'moneykamalo.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'c709b21b7fc8f59921307c73e6abb6f7a2bbf53c')
-SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'moneykamalo.com')
-SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', 'c709b21b7fc8f59921307c73e6abb6f7a2bbf53c')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
+SHORTLINK_API = environ.get('SHORTLINK_API', '')
+SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', '')
+SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
