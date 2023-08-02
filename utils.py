@@ -155,14 +155,14 @@ async def broadcast_messages(user_id, message):
         return await broadcast_messages(user_id, message)
     except InputUserDeactivated:
         await db.delete_user(int(user_id))
-        logging.info(f"{user_id}-Removed from Database, since deleted account.")
+        logging.info(f"{user_id}-Rᴇᴍᴏᴠᴇᴅ ғʀᴏᴍ Dᴀᴛᴀʙᴀsᴇ, sɪɴᴄᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛ.")
         return False, "Deleted"
     except UserIsBlocked:
-        logging.info(f"{user_id} -Blocked the bot.")
+        logging.info(f"{user_id} -Bʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ.")
         return False, "Blocked"
     except PeerIdInvalid:
         await db.delete_user(int(user_id))
-        logging.info(f"{user_id} - PeerIdInvalid")
+        logging.info(f"{user_id} - PᴇᴇʀIᴅIɴᴠᴀʟɪᴅ")
         return False, "Error"
     except Exception as e:
         return False, "Error"
@@ -772,7 +772,7 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
                                 InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                             ],[
-                                InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/KUSHALHK")
+                                InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/DANGER1753")
                                 ]
                             ]
                         )
@@ -815,7 +815,7 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                         InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                     ],[
-                        InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/KUSHALHK")
+                        InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/DANGER1753")
                         ]
                     ]
                 )
