@@ -6,7 +6,7 @@ class script(object):
 ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ sᴇᴇ ᴍʏ ᴍᴀɢɪᴄ 😍</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
-Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs ."""
+Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs </b>"""
 
     ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ : {}</b>
 <b>✯ Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/DANGER1753>𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑</a></b>
@@ -17,7 +17,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs ."""
 
 ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ ғᴏʀ ᴛʜᴇ ʀᴇᴘᴏ ᴏʀ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 😊
 
-𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 : <a href=https://t.me/DANGER1753>𝐂𝐋𝐈𝐂𝐊 𝐇𝐄𝐑𝐄</a></b>"""
+<a href=https://t.me/DANGER1753>𝐂𝐋𝐈𝐂𝐊 𝐇𝐄𝐑𝐄</a></b>"""
                   
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
