@@ -365,10 +365,10 @@ async def start(client, message):
             btn = [[
                 InlineKeyboardButton("🔄 ɢᴇᴛ ғɪʟᴇ ᴀɢᴀɪɴ 🔄", callback_data=f'delfile#{file_id}')
             ]]
-            k = await msg.reply("ᴛʜɪs ᴍᴏᴠɪᴇ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u>𝟏𝟎 𝐌𝐈𝐍𝐒</u>\nᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs.\n\nᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴀɴᴅ sᴛᴀʀᴛ ʏᴏᴜʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇʀᴇ",quote=True)
+            k = await msg.reply("<b>ᴛʜɪs ᴍᴏᴠɪᴇ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u>𝟏𝟎 𝐌𝐈𝐍𝐒</u>\nᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs.\n\nᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴀɴᴅ sᴛᴀʀᴛ ʏᴏᴜʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇʀᴇ</b>",quote=True)
             await asyncio.sleep(600)
             await msg.delete()
-            await k.edit_text("ʏᴏᴜʀ ғɪʟᴇ/ᴠɪᴅᴇᴏ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ!!!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ғɪʟᴇ 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
+            await k.edit_text("<b>ʏᴏᴜʀ ғɪʟᴇ/ᴠɪᴅᴇᴏ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ!!!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ғɪʟᴇ 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
             return
         except:
             pass
@@ -404,10 +404,10 @@ async def start(client, message):
     btn = [[
         InlineKeyboardButton("🔄 ɢᴇᴛ ғɪʟᴇ ᴀɢᴀɪɴ 🔄", callback_data=f'delfile#{file_id}')
     ]]
-    k = await msg.reply("ᴛʜɪs ᴍᴏᴠɪᴇ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u>𝟏𝟎 𝐌𝐈𝐍𝐒</u>\nᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs.\n\nᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴀɴᴅ sᴛᴀʀᴛ ʏᴏᴜʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇʀᴇ",quote=True)
+    k = await msg.reply("<b>ᴛʜɪs ᴍᴏᴠɪᴇ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u>𝟏𝟎 𝐌𝐈𝐍𝐒</u>\nᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs.\n\nᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴀɴᴅ sᴛᴀʀᴛ ʏᴏᴜʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇʀᴇ</b>",quote=True)
     await asyncio.sleep(600)
     await msg.delete()
-    await k.edit_text("ʏᴏᴜʀ ғɪʟᴇ/ᴠɪᴅᴇᴏ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ!!!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ғɪʟᴇ 👇",reply_markup=InlineKeyboardMarkup(btn))
+    await k.edit_text("<b>ʏᴏᴜʀ ғɪʟᴇ/ᴠɪᴅᴇᴏ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ!!!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ғɪʟᴇ 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
     return   
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
