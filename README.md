@@ -43,11 +43,6 @@
 - [x] 𝐴𝑛𝑑 𝑀𝑜𝑟𝑒...
 
 
-## Note 🏷️
- - <b>Importing this repo instead of forking is strictly prohibited 🚫 Kindly fork and edit as your wish (Must Give Credits for devs) 🙃</b>
- - <b>If you find any bugs or errors, report it to the developer.</b>
-* [![Contact Developer](https://img.shields.io/static/v1?label=Original+Repo&message=On+Github&color=critical)](https://github.com/DANGER1753)
-
 
 ## 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠
 ```
