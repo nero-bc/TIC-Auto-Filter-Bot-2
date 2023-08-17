@@ -456,7 +456,7 @@ async def delete(bot, message):
     if reply and reply.media:
         msg = await message.reply("ᴘʀᴏᴄᴇssɪɴɢ...⏳", quote=True)
     else:
-        await message.reply('Reply to file with /delete which you want to delete', quote=True)
+        await message.reply('ʀᴇᴘʟʏ ᴛᴏ ғɪʟᴇ ᴡɪᴛʜ /delete ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴇʟᴇᴛᴇ', quote=True)
         return
 
     for file_type in ("document", "video", "audio"):
