@@ -859,7 +859,7 @@ async def send_msg(bot, message):
         except Exception as e:
             await message.reply_text(f"<b>Error: {e}</b>")
     else:
-        await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ ᴜsɪɴɢ ᴛʜᴇ ᴛᴀʀɢᴇᴛ ᴄʜᴀᴛ ɪᴅ. ғᴏʀ ᴇɢ: /sᴇɴᴅ ᴜsᴇʀ ɪᴅ</b>")
+        await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ ᴜsɪɴɢ ᴛʜᴇ ᴛᴀʀɢᴇᴛ ᴄʜᴀᴛ ɪᴅ. ғᴏʀ ᴇɢ: /send userid</b>")
 
 @Client.on_message(filters.command("deletefiles") & filters.user(ADMINS))
 async def deletemultiplefiles(bot, message):
@@ -895,7 +895,7 @@ async def shortlink(bot, message):
         return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴛᴜʀɴ ᴏғғ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ")
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
-        return await message.reply_text(f"<b>ʜᴇʏ {message.from_user.mention}, ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ᴡᴏʀᴋs ᴏɴ ɢʀᴏᴜᴘs !\n\n<u>ғᴏʟʟᴏᴡ ᴛʜᴇsᴇ sᴛᴇᴘs ᴛᴏ ᴄᴏɴɴᴇᴄᴛ sʜᴏʀᴛᴇɴᴇʀ:</u>\n\n𝟷. ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ғᴜʟʟ ᴀᴅᴍɪɴ ʀɪɢʜᴛs\n\n𝟸. ᴀғᴛᴇʀ ᴀᴅᴅɪɴɢ ɪɴ ɢʀᴘ, sᴇᴛ ʏᴏᴜʀ sʜᴏʀᴛᴇɴᴇʀ\n\nsᴇɴᴅ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ\n\n—> /sʜᴏʀᴛʟɪɴᴋ ""{ʏᴏᴜʀ_sʜᴏʀᴛᴇɴᴇʀ_ᴡᴇʙsɪᴛᴇ_ɴᴀᴍᴇ} {ʏᴏᴜʀ_sʜᴏʀᴛᴇɴᴇʀ_ᴀᴘɪ}\n\n#sᴀᴍᴘʟᴇ:-\n/sʜᴏʀᴛʟɪɴᴋ ᴍᴘʟᴀʏʟɪɴᴋ.ᴄᴏᴍ 𝟷ғ𝟷ᴅᴀ𝟻ᴄ𝟿ᴅғ𝟿ᴀ𝟻𝟾𝟶𝟻𝟾𝟼𝟽𝟸ᴀᴄ𝟾ᴅ𝟾𝟷𝟹𝟺ᴇ𝟸𝟶𝟹ʙ𝟶𝟹𝟺𝟸𝟼ᴀ𝟷\n\nᴛʜᴀᴛ's ɪᴛ!!! ᴇɴᴊᴏʏ ᴇᴀʀɴɪɴɢ ᴍᴏɴᴇʏ 💲</b>")
+        return await message.reply_text(f"<b>ʜᴇʏ {message.from_user.mention}, ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ᴡᴏʀᴋs ᴏɴ ɢʀᴏᴜᴘs !\n\n<u>ғᴏʟʟᴏᴡ ᴛʜᴇsᴇ sᴛᴇᴘs ᴛᴏ ᴄᴏɴɴᴇᴄᴛ sʜᴏʀᴛᴇɴᴇʀ:</u>\n\n𝟷. ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ғᴜʟʟ ᴀᴅᴍɪɴ ʀɪɢʜᴛs\n\n𝟸. ᴀғᴛᴇʀ ᴀᴅᴅɪɴɢ ɪɴ ɢʀᴘ, sᴇᴛ ʏᴏᴜʀ sʜᴏʀᴛᴇɴᴇʀ\n\nsᴇɴᴅ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ\n\n—> /shortlink ""{ʏᴏᴜʀ_sʜᴏʀᴛᴇɴᴇʀ_ᴡᴇʙsɪᴛᴇ_ɴᴀᴍᴇ} {ʏᴏᴜʀ_sʜᴏʀᴛᴇɴᴇʀ_ᴀᴘɪ}\n\n#sᴀᴍᴘʟᴇ:-\n/shortlink mplaylink.com 1f1da5c9df9a58058672ac8d8134e203b03426a1\n\nᴛʜᴀᴛ's ɪᴛ!!! ᴇɴᴊᴏʏ ᴇᴀʀɴɪɴɢ ᴍᴏɴᴇʏ 💲</b>")
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         grpid = message.chat.id
         title = message.chat.title
@@ -911,8 +911,8 @@ async def shortlink(bot, message):
     try:
         command, shortlink_url, api = data.split(" ")
     except:
-        return await message.reply_text("<b>ᴄᴏᴍᴍᴀɴᴅ ɪɴᴄᴏᴍᴘʟᴇᴛᴇ :(\n\nɢɪᴠᴇ ᴍᴇ ᴀ sʜᴏʀᴛᴇɴᴇʀ ᴡᴇʙsɪᴛᴇ ʟɪɴᴋ ᴀɴᴅ ᴀᴘɪ ᴀʟᴏɴɢ ᴡɪᴛʜ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ !\n\nғᴏʀᴍᴀᴛ: <code>/sʜᴏʀᴛʟɪɴᴋ ᴍᴘʟᴀʏʟɪɴᴋ.ᴄᴏᴍ 𝟷ғ𝟷ᴅᴀ𝟻ᴄ𝟿ᴅғ𝟿ᴀ𝟻𝟾𝟶𝟻𝟾𝟼𝟽𝟸ᴀᴄ𝟾ᴅ𝟾𝟷𝟹𝟺ᴇ𝟸𝟶𝟹ʙ𝟶𝟹𝟺𝟸𝟼ᴀ𝟷</code></b>")
-    reply = await message.reply_text("<b>Please Wait...</b>")
+        return await message.reply_text("<b>ᴄᴏᴍᴍᴀɴᴅ ɪɴᴄᴏᴍᴘʟᴇᴛᴇ :(\n\nɢɪᴠᴇ ᴍᴇ ᴀ sʜᴏʀᴛᴇɴᴇʀ ᴡᴇʙsɪᴛᴇ ʟɪɴᴋ ᴀɴᴅ ᴀᴘɪ ᴀʟᴏɴɢ ᴡɪᴛʜ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ !\n\nғᴏʀᴍᴀᴛ: <code>/shortlink mplaylink.com 1f1da5c9df9a58058672ac8d8134e203b03426a1</code></b>")
+    reply = await message.reply_text("<b>ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...</b>")
     shortlink_url = re.sub(r"https?://?", "", shortlink_url)
     shortlink_url = re.sub(r"[:/]", "", shortlink_url)
     await save_group_settings(grpid, 'shortlink', shortlink_url)
@@ -985,12 +985,12 @@ async def showshortlink(bot, message):
         elif 'shortlink' in settings.keys() and 'tutorial' not in settings.keys():
             su = settings['shortlink']
             sa = settings['shortlink_api']
-            return await message.reply_text(f"<b>sʜᴏʀᴛʟɪɴᴋ ᴡᴇʙsɪᴛᴇ: <code>{su}</code>\n\nᴀᴘɪ: <code>{sa}</code>\n\nᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ\n\nʏᴏᴜ ᴄᴀɴ ᴄᴏɴɴᴇᴄᴛ ᴜsɪɴɢ /sᴇᴛ_ᴛᴜᴛᴏʀɪᴀʟ ᴄᴏᴍᴍᴀɴᴅ</b>")
+            return await message.reply_text(f"<b>sʜᴏʀᴛʟɪɴᴋ ᴡᴇʙsɪᴛᴇ: <code>{su}</code>\n\nᴀᴘɪ: <code>{sa}</code>\n\nᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ\n\nʏᴏᴜ ᴄᴀɴ ᴄᴏɴɴᴇᴄᴛ ᴜsɪɴɢ /set_tutorial command</b>")
         elif 'shortlink' not in settings.keys() and 'tutorial' in settings.keys():
             st = settings['tutorial']
-            return await message.reply_text(f"<b>ᴛᴜᴛᴏʀɪᴀʟ: <code>{st}</code>\n\nsʜᴏʀᴛᴇɴᴇʀ ᴜʀʟ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ\n\nʏᴏᴜ ᴄᴀɴ ᴄᴏɴɴᴇᴄᴛ ᴜsɪɴɢ /sʜᴏʀᴛʟɪɴᴋ ᴄᴏᴍᴍᴀɴᴅ</b>")
+            return await message.reply_text(f"<b>ᴛᴜᴛᴏʀɪᴀʟ: <code>{st}</code>\n\nsʜᴏʀᴛᴇɴᴇʀ ᴜʀʟ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ\n\nʏᴏᴜ ᴄᴀɴ ᴄᴏɴɴᴇᴄᴛ ᴜsɪɴɢ /shortlink command</b>")
         else:
-            return await message.reply_text("sʜᴏʀᴛᴇɴᴇʀ ᴜʀʟ ᴀɴᴅ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ. ᴄʜᴇᴄᴋ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅs, /sʜᴏʀᴛʟɪɴᴋ ᴀɴᴅ /sᴇᴛ_ᴛᴜᴛᴏʀɪᴀʟ")
+            return await message.reply_text("sʜᴏʀᴛᴇɴᴇʀ ᴜʀʟ ᴀɴᴅ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ. ᴄʜᴇᴄᴋ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅs, /shortlink ᴀɴᴅ /set_tutorial")
 
 
 @Client.on_message(filters.command("set_tutorial"))
@@ -1013,7 +1013,7 @@ async def settutorial(bot, message):
     else:
         pass
     if len(message.command) == 1:
-        return await message.reply("<b>ɢɪᴠᴇ ᴍᴇ ᴀ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ᴀʟᴏɴɢ ᴡɪᴛʜ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ\n\nᴄᴏᴍᴍᴀɴᴅ ᴜsᴀɢᴇ: /sᴇᴛ_ᴛᴜᴛᴏʀɪᴀʟ ʏᴏᴜʀ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ</b>")
+        return await message.reply("<b>ɢɪᴠᴇ ᴍᴇ ᴀ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ᴀʟᴏɴɢ ᴡɪᴛʜ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ\n\nᴄᴏᴍᴍᴀɴᴅ ᴜsᴀɢᴇ: /set_tutorial ʏᴏᴜʀ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ</b>")
     elif len(message.command) == 2:
         reply = await message.reply_text("<b>ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...</b>")
         tutorial = message.command[1]
@@ -1021,7 +1021,7 @@ async def settutorial(bot, message):
         await save_group_settings(grpid, 'is_tutorial', True)
         await reply.edit_text(f"<b>sᴜᴄᴄᴇssғᴜʟʟʏ ᴀᴅᴅᴇᴅ ᴛᴜᴛᴏʀɪᴀʟ\n\nʜᴇʀᴇ ɪs ʏᴏᴜʀ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘ {title} - <code>{tutorial}</code></b>")
     else:
-        return await message.reply("<b>ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ɪɴᴄᴏʀʀᴇᴄᴛ ғᴏʀᴍᴀᴛ\n\nғᴏʀᴍᴀᴛ: /sᴇᴛ_ᴛᴜᴛᴏʀɪᴀʟ ʏᴏᴜʀ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ</b>")
+        return await message.reply("<b>ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ɪɴᴄᴏʀʀᴇᴄᴛ ғᴏʀᴍᴀᴛ\n\nғᴏʀᴍᴀᴛ: /set_tutorial ʏᴏᴜʀ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ</b>")
         
 @Client.on_message(filters.command("restart") & filters.user(ADMINS))
 async def stop_button(bot, message):
