@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
 
-@Client.on_message((filters.private | filters.group) & filters.command('connect'))
+@Client.on_message(filters.group & filters.command('connect'))
 async def addconnection(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
