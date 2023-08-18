@@ -40,8 +40,8 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ 〄', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
+                    InlineKeyboardButton('〄 ʜᴇʟᴘ 〄', callback_data='help'),
+                    InlineKeyboardButton('⍟ ᴀʙᴏᴜᴛ ⍟', callback_data='about')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgIAAxkBAAEKDU1k3hdblAMuXWkapN9YbcsWdhHKXAAC_g4AAudvIEnxNZjTX_WA2DAE") 
@@ -86,8 +86,8 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ 〄', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
+                    InlineKeyboardButton('〄 ʜᴇʟᴘ 〄', callback_data='help'),
+                    InlineKeyboardButton('⍟ ᴀʙᴏᴜᴛ ⍟', callback_data='about')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
@@ -104,7 +104,7 @@ async def start(client, message):
         file_id = data
         pre = ""
     if data.split("-", 1)[0] == "BATCH":
-        sts = await message.reply("<b>Please wait...</b>")
+        sts = await message.reply("<b>ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...</b>")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -153,7 +153,7 @@ async def start(client, message):
         return
     
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("<b>Please wait...</b>")
+        sts = await message.reply("<b>ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...</b>")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
@@ -228,7 +228,7 @@ async def start(client, message):
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=allfiles_{file_id}", True)
         else:
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=allfiles_{file_id}", False)
-        k = await client.send_message(chat_id=message.from_user.id,text=f"<b>ɢᴇᴛ ᴀʟʟ ғɪʟᴇs ɪɴ ᴀ sɪɴɢʟᴇ ᴄʟɪᴄᴋ!!!\n\n📂 ʟɪɴᴋ ➠ : {g}\n\n<i>ɴᴏᴛᴇ: ᴛʜɪs ᴍᴇssᴀɢᴇ ɪs ᴅᴇʟᴇᴛᴇᴅ ɪɴ 𝟻 ᴍɪɴs ᴛᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛs. sᴀᴠᴇ ᴛʜᴇ ʟɪɴᴋ ᴛᴏ sᴏᴍᴇᴡʜᴇʀᴇ ᴇʟsᴇ</i></b>", reply_markup=InlineKeyboardMarkup(
+        k = await client.send_message(chat_id=message.from_user.id,text=f"<b>ɢᴇᴛ ᴀʟʟ ғɪʟᴇs ɪɴ ᴀ sɪɴɢʟᴇ ᴄʟɪᴄᴋ!!!\n\n📂 ʟɪɴᴋ ➠ : {g}\n\n<i>ɴᴏᴛᴇ: ᴛʜɪs ᴍᴇssᴀɢᴇ ɪs ᴅᴇʟᴇᴛᴇᴅ ɪɴ 10 ᴍɪɴs ᴛᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛs. sᴀᴠᴇ ᴛʜᴇ ʟɪɴᴋ ᴛᴏ sᴏᴍᴇᴡʜᴇʀᴇ ᴇʟsᴇ</i></b>", reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton('📂 ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ 📂', url=g)
@@ -288,7 +288,7 @@ async def start(client, message):
                     InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ]]
                 await message.reply_text(
-                    text="<b>You are not verified !\nKindly verify to continue !</b>",
+                    text="<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ !\nᴋɪɴᴅʟʏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ !</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -310,7 +310,7 @@ async def start(client, message):
     elif data.startswith("files"):
         user = message.from_user.id
         if temp.SHORT.get(user)==None:
-            await message.reply_text(text="<b>Please Search Again in Group</b>")
+            await message.reply_text(text="<b>ᴘʟᴇᴀsᴇ sᴇᴀʀᴄʜ ᴀɢᴀɪɴ ɪɴ ɢʀᴏᴜᴘ</b>")
         else:
             chat_id = temp.SHORT.get(user)
         settings = await get_settings(chat_id)
@@ -341,7 +341,7 @@ async def start(client, message):
                     InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ]]
                 await message.reply_text(
-                    text="<b>You are not verified !\nKindly verify to continue !</b>",
+                    text="<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ !\nᴋɪɴᴅʟʏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ !</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -390,7 +390,7 @@ async def start(client, message):
             InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
         ]]
         await message.reply_text(
-            text="<b>You are not verified !\nKindly verify to continue !</b>",
+            text="<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ !\nᴋɪɴᴅʟʏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ !</b>",
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
@@ -500,7 +500,7 @@ async def delete(bot, message):
 @Client.on_message(filters.command('deleteall') & filters.user(ADMINS))
 async def delete_all_index(bot, message):
     await message.reply_text(
-        'ᴛʜɪs ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ɪɴᴅᴇxᴇᴅ ғɪʟᴇs.\ɴᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ??',
+        'ᴛʜɪs ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ɪɴᴅᴇxᴇᴅ ғɪʟᴇs.\nᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ??',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -763,7 +763,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇsᴛ', url=f"{message.reply_to_message.link}"),
                         InlineKeyboardButton('sʜᴏᴡ ᴏᴘᴛɪᴏɴs', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>ʀᴇᴘᴏʀᴛᴇʀ : {mention} ({reporter})\n\nᴍᴇssᴀɢᴇ : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -771,7 +771,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇsᴛ', url=f"{message.reply_to_message.link}"),
                         InlineKeyboardButton('sʜᴏᴡ ᴏᴘᴛɪᴏɴs', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>ʀᴇᴘᴏʀᴛᴇʀ : {mention} ({reporter})\n\nᴍᴇssᴀɢᴇ : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
@@ -798,7 +798,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇsᴛ', url=f"{message.link}"),
                         InlineKeyboardButton('sʜᴏᴡ ᴏᴘᴛɪᴏɴs', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>ʀᴇᴘᴏʀᴛᴇʀ : {mention} ({reporter})\n\nᴍᴇssᴀɢᴇ : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -806,7 +806,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇsᴛ', url=f"{message.link}"),
                         InlineKeyboardButton('sʜᴏᴡ ᴏᴘᴛɪᴏɴs', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>ʀᴇᴘᴏʀᴛᴇʀ : {mention} ({reporter})\n\nᴍᴇssᴀɢᴇ : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
