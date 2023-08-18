@@ -16,9 +16,7 @@ class script(object):
     SOURCE_TXT = """
 <b>ᴛʜɪs ʙᴏᴛ ɪs ɴᴏᴛ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ.
 
-ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ ғᴏʀ ᴛʜᴇ ʀᴇᴘᴏ ᴏʀ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 😊
-
-<a href=https://t.me/DANGER1753>𝐂𝐋𝐈𝐂𝐊 𝐇𝐄𝐑𝐄</a></b>"""
+ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ ғᴏʀ ᴛʜᴇ ʀᴇᴘᴏ ᴏʀ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 😊</b>"""
                   
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
@@ -189,27 +187,20 @@ sᴇʀɪᴇs / ᴀɴɪᴍᴇ ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ
 
 🚯 ᴅᴏɴ'ᴛ ᴜsᴇ ➠ ':(!,./)"""
 
-    NORSLTS = """
-★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
-
-𝗜𝗗 <b>: {}</b>
-
-𝗡𝗮𝗺𝗲 <b>: {}</b>
-
-𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
+    NORSLTS = """"""
 
     CAPTION = """<b> {file_name} 
 
 @TheInsomniacsClub</b>"""
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
-IMDb Data:
 
+IMDb Data:
 🏷 Title: <a href={url}>{title}</a>
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10
 🎭 Genres: {genres}
 📆 Year: <a href={url}/releaseinfo>{year}</a>
-⏱️ Result Shown in: {remaining_seconds} <i>seconds</i> 🔥
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>"""
+</b>"""
     
     ALL_FILTERS = """
 <b>ʜᴇʏ {}, ᴛʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
