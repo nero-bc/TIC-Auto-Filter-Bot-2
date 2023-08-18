@@ -58,10 +58,10 @@ async def showid(client, message):
 async def who_is(client, message):
     # https://github.com/SpEcHiDe/PyroGramBot/blob/master/pyrobot/plugins/admemes/whois.py#L19
     status_message = await message.reply_text(
-        "`Fetching user info...`"
+        "`ғᴇᴛᴄʜɪɴɢ ᴜsᴇʀ ɪɴғᴏ...`"
     )
     await status_message.edit(
-        "`Processing user info...`"
+        "`ᴘʀᴏᴄᴇssɪɴɢ ᴜsᴇʀ ɪɴғᴏ...`"
     )
     from_user = None
     from_user_id, _ = extract_user(message)
@@ -71,7 +71,7 @@ async def who_is(client, message):
         await status_message.edit(str(error))
         return
     if from_user is None:
-        return await status_message.edit("no valid user_id / message specified")
+        return await status_message.edit("ɴᴏ ᴠᴀʟɪᴅ ᴜsᴇʀ ɪᴅ / ᴍᴇssᴀɢᴇ sᴘᴇᴄɪғɪᴇᴅ")
     message_out_str = ""
     message_out_str += f"<b>➲First Name:</b> {from_user.first_name}\n"
     last_name = from_user.last_name or "<b>None</b>"
@@ -101,7 +101,7 @@ async def who_is(client, message):
             message=chat_photo.big_file_id
         )
         buttons = [[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -115,7 +115,7 @@ async def who_is(client, message):
         os.remove(local_user_photo)
     else:
         buttons = [[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -130,11 +130,11 @@ async def who_is(client, message):
 @Client.on_message(filters.command(["imdb", 'search']))
 async def imdb_search(client, message):
     if ' ' in message.text:
-        k = await message.reply('Searching ImDB')
+        k = await message.reply('sᴇᴀʀᴄʜɪɴɢ ɪᴍᴅʙ')
         r, title = message.text.split(None, 1)
         movies = await get_poster(title, bulk=True)
         if not movies:
-            return await message.reply("No results Found")
+            return await message.reply("ɴᴏ ʀᴇsᴜʟᴛs ғᴏᴜɴᴅ")
         btn = [
             [
                 InlineKeyboardButton(
@@ -144,9 +144,9 @@ async def imdb_search(client, message):
             ]
             for movie in movies
         ]
-        await k.edit('Here is what i found on IMDb', reply_markup=InlineKeyboardMarkup(btn))
+        await k.edit('ʜᴇʀᴇ ɪs ᴡʜᴀᴛ ɪ ғᴏᴜɴᴅ ᴏɴ ɪᴍᴅʙ', reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply('Give me a movie / series Name')
+        await message.reply('ɢɪᴠᴇ ᴍᴇ ᴀ ᴍᴏᴠɪᴇ / sᴇʀɪᴇs / ᴀɴɪᴍᴇ ɴᴀᴍᴇ')
 
 @Client.on_callback_query(filters.regex('^imdb'))
 async def imdb_callback(bot: Client, quer_y: CallbackQuery):
