@@ -117,9 +117,9 @@ async def deletegfilter(client, message):
         cmd, text = message.text.split(" ", 1)
     except:
         await message.reply_text(
-            "<i>Mention the gfiltername which you wanna delete!</i>\n\n"
+            "<i>ᴍᴇɴᴛɪᴏɴ ᴛʜᴇ ɢғɪʟᴛᴇʀɴᴀᴍᴇ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴇʟᴇᴛᴇ!</i>\n\n"
             "<code>/delg gfiltername</code>\n\n"
-            "Use /viewgfilters to view all available gfilters",
+            "ᴜsᴇ /viewgfilters ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ɢғɪʟᴛᴇʀs",
             quote=True
         )
         return
