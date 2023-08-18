@@ -17,7 +17,7 @@ from info import ADMINS
 async def addfilter(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴜsᴇ /ᴄᴏɴɴᴇᴄᴛ {message.chat.id} ɪɴ ᴘᴍ")
+        return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴜsᴇ /connect {message.chat.id} ɪɴ ᴘᴍ")
     chat_type = message.chat.type
     args = message.text.html.split(None, 1)
 
@@ -122,7 +122,7 @@ async def get_all(client, message):
     chat_type = message.chat.type
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴜsᴇ /ᴄᴏɴɴᴇᴄᴛ {message.chat.id} ɪɴ ᴘᴍ")
+        return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴜsᴇ /connect {message.chat.id} ɪɴ ᴘᴍ")
     if chat_type == enums.ChatType.PRIVATE:
         userid = message.from_user.id
         grpid = await active_connection(str(userid))
@@ -184,7 +184,7 @@ async def get_all(client, message):
 async def deletefilter(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴜsᴇ /ᴄᴏɴɴᴇᴄᴛ {message.chat.id} ɪɴ ᴘᴍ")
+        return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴜsᴇ /connect {message.chat.id} ɪɴ ᴘᴍ")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -220,8 +220,8 @@ async def deletefilter(client, message):
     except:
         await message.reply_text(
             "<i>ᴍᴇɴᴛɪᴏɴ ᴛʜᴇ ғɪʟᴛᴇʀɴᴀᴍᴇ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴇʟᴇᴛᴇ!</i>\n\n"
-            "<code>/ᴅᴇʟ ғɪʟᴛᴇʀɴᴀᴍᴇ</code>\n\n"
-            "ᴜsᴇ /ᴠɪᴇᴡғɪʟᴛᴇʀs ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ғɪʟᴛᴇʀs",
+            "<code>/del filtername</code>\n\n"
+            "ᴜsᴇ /viewfilters ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ғɪʟᴛᴇʀs",
             quote=True
         )
         return
@@ -235,7 +235,7 @@ async def deletefilter(client, message):
 async def delallconfirm(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴜsᴇ /ᴄᴏɴɴᴇᴄᴛ {message.chat.id} ɪɴ ᴘᴍ")
+        return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴜsᴇ /connect {message.chat.id} ɪɴ ᴘᴍ")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -269,4 +269,3 @@ async def delallconfirm(client, message):
             ]),
             quote=True
         )
-
