@@ -12,7 +12,7 @@ logger.setLevel(logging.ERROR)
 async def addconnection(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴜsᴇ /ᴄᴏɴɴᴇᴄᴛ {message.chat.id} ɪɴ ᴘᴍ")
+        return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴜsᴇ /connect {message.chat.id} ɪɴ ᴘᴍ")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -21,8 +21,8 @@ async def addconnection(client, message):
         except:
             await message.reply_text(
                 "<b>ᴇɴᴛᴇʀ ɪɴ ᴄᴏʀʀᴇᴄᴛ ғᴏʀᴍᴀᴛ!</b>\n\n"
-                "<code>/ᴄᴏɴɴᴇᴄᴛ ɢʀᴏᴜᴘ ɪᴅ</code>\n\n"
-                "<i>ɢᴇᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪᴅ ʙʏ ᴀᴅᴅɪɴɢ ᴛʜɪs ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴜsᴇ <code>/ɪᴅ</code></i>",
+                "<code>/connect ɢʀᴏᴜᴘ ɪᴅ</code>\n\n"
+                "<i>ɢᴇᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪᴅ ʙʏ ᴀᴅᴅɪɴɢ ᴛʜɪs ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴜsᴇ <code>/id</code></i>",
                 quote=True
             )
             return
@@ -83,11 +83,11 @@ async def addconnection(client, message):
 async def deleteconnection(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴜsᴇ /ᴄᴏɴɴᴇᴄᴛ {message.chat.id} ɪɴ ᴘᴍ")
+        return await message.reply(f"ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. ᴜsᴇ /connect {message.chat.id} ɪɴ ᴘᴍ")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
-        await message.reply_text("ʀᴜɴ /ᴄᴏɴɴᴇᴄᴛɪᴏɴs ᴛᴏ ᴠɪᴇᴡ ᴏʀ ᴅɪsᴄᴏɴɴᴇᴄᴛ ғʀᴏᴍ ɢʀᴏᴜᴘs!", quote=True)
+        await message.reply_text("ʀᴜɴ /connections ᴛᴏ ᴠɪᴇᴡ ᴏʀ ᴅɪsᴄᴏɴɴᴇᴄᴛ ғʀᴏᴍ ɢʀᴏᴜᴘs!", quote=True)
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         group_id = message.chat.id
@@ -104,7 +104,7 @@ async def deleteconnection(client, message):
         if delcon:
             await message.reply_text("sᴜᴄᴄᴇssғᴜʟʟʏ ᴅɪsᴄᴏɴɴᴇᴄᴛᴇᴅ ғʀᴏᴍ ᴛʜɪs ᴄʜᴀᴛ", quote=True)
         else:
-            await message.reply_text("ᴛʜɪs ᴄʜᴀᴛ ɪsɴ'ᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴍᴇ!\nᴅᴏ /ᴄᴏɴɴᴇᴄᴛ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ.", quote=True)
+            await message.reply_text("ᴛʜɪs ᴄʜᴀᴛ ɪsɴ'ᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴍᴇ!\nᴅᴏ /connect ᴛᴏ ᴄᴏɴɴᴇᴄᴛ.", quote=True)
 
 
 @Client.on_message(filters.private & filters.command(["connections"]))
