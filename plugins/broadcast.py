@@ -37,7 +37,7 @@ async def verupikkals(bot, message):
         done += 1
         await asyncio.sleep(2)
         if not done % 20:
-            await sts.edit(f"ʙʀᴏᴀᴅᴄᴀsᴛ ɪɴ ᴘʀᴏɢʀᴇss:\n\nᴛᴏᴛᴀʟ ᴜsᴇʀs: {total_users}\nᴄᴏᴍᴘʟᴇᴛᴇᴅ: {done} / {total_users}\nsᴜᴄᴄᴇss: {success}\nʙʟᴏᴄᴋᴇᴅ: {blocked}\nᴅᴇʟᴇᴛᴇᴅ: {deleted}")    
+           await sts.edit(f"ʙʀᴏᴀᴅᴄᴀsᴛ ɪɴ ᴘʀᴏɢʀᴇss:\n\nᴛᴏᴛᴀʟ ᴜsᴇʀs: {total_users}\nᴄᴏᴍᴘʟᴇᴛᴇᴅ: {done} / {total_users}\nsᴜᴄᴄᴇss: {success}\nʙʟᴏᴄᴋᴇᴅ: {blocked}\nᴅᴇʟᴇᴛᴇᴅ: {deleted}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
     await sts.edit(f"ʙʀᴏᴀᴅᴄᴀsᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ:\nᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ {time_taken} sᴇᴄᴏɴᴅs.\n\nᴛᴏᴛᴀʟ ᴜsᴇʀs: {total_users}\nᴄᴏᴍᴘʟᴇᴛᴇᴅ: {done} / {total_users}\nsᴜᴄᴄᴇss: {success}\nʙʟᴏᴄᴋᴇᴅ: {blocked}\nᴅᴇʟᴇᴛᴇᴅ: {deleted}")
 
@@ -62,7 +62,7 @@ async def broadcast_group(bot, message):
                 failed += 1
         done += 1
         if not done % 20:
-            await sts.edit(f"ʙʀᴏᴀᴅᴄᴀsᴛ ɪɴ ᴘʀᴏɢʀᴇss:\n\nᴛᴏᴛᴀʟ ɢʀᴏᴜᴘs: {total_groups}\nᴄᴏᴍᴘʟᴇᴛᴇᴅ: {done} / {total_groups}\nsᴜᴄᴄᴇss: {success}")    
+             await sts.edit(f"ʙʀᴏᴀᴅᴄᴀsᴛ ɪɴ ᴘʀᴏɢʀᴇss:\n\nᴛᴏᴛᴀʟ ɢʀᴏᴜᴘs: {total_groups}\nᴄᴏᴍᴘʟᴇᴛᴇᴅ: {done} / {total_groups}\nsᴜᴄᴄᴇss: {success}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
     await sts.edit(f"ʙʀᴏᴀᴅᴄᴀsᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ:\nᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ {time_taken} sᴇᴄᴏɴᴅs.\n\nᴛᴏᴛᴀʟ ɢʀᴏᴜᴘs: {total_groups}\nᴄᴏᴍᴘʟᴇᴛᴇᴅ: {done} / {total_groups}\nsᴜᴄᴄᴇss: {success}")
         
