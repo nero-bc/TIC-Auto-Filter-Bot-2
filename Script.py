@@ -165,10 +165,7 @@ Any Doubts or Not Connecting? Contact Developer </b>
 <b>ɪғ ᴛʜᴇ ғɪʟᴇ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏʀ ᴍᴏʀᴇ ғɪʟᴇs ᴀʀᴇ ᴛᴏ ʙᴇ ᴀᴅᴅᴇᴅ ғᴏʀ ᴍᴏᴠɪᴇs ᴀɴᴅ ɴᴇᴡ sᴇᴀsᴏɴs ғᴏʀ sᴇʀɪᴇs / ᴀɴɪᴍᴇ 
 👇🏻 ᴛʜᴇɴ ʀᴇǫᴜᴇsᴛ ᴜsɪɴɢ ᴛʜᴇ ʙᴇʟᴏᴡ ғᴏʀᴍᴀᴛ 
 
-@admin 
-Name of Movie / Series / Anime
-Year
-Language</b>"""
+@admin Name of Movie/Series/Anime Year Language</b>"""
 
     SELECT = """
 ᴍᴏᴠɪᴇs ➢ sᴇʟᴇᴄᴛ "ʟᴀɴɢᴜᴀɢᴇs"
