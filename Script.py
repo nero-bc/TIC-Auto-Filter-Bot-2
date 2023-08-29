@@ -198,6 +198,7 @@ sᴇʀɪᴇs / ᴀɴɪᴍᴇ ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ
     CAPTION = """<b> {file_name} 
 
 @TheInsomniacsClub</b>"""
+    
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
 
@@ -235,4 +236,6 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 📅 Dᴀᴛᴇ : <code>{}</code>
 ⏰ Tɪᴍᴇ : <code>{}</code></b>"""
 
-    LOGO = """TheInsomiacsClub"""
+    LOGO = """
+▀█▀ █░█ █▀▀ █ █▄░█ █▀ █▀█ █▀▄▀█ █ ▄▀█ █▀▀ █▀ █▀▀ █░░ █░█ █▄▄
+░█░ █▀█ ██▄ █ █░▀█ ▄█ █▄█ █░▀░█ █ █▀█ █▄▄ ▄█ █▄▄ █▄▄ █▄█ █▄█"""
