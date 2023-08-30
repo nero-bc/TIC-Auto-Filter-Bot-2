@@ -1889,9 +1889,9 @@ async def auto_filter(client, msg, spoll=False):
                 cap += f"<b>\n📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n</a></b>"
     else:
         if settings["button"]:
-            cap = f"<b>ʀᴇsᴜʟᴛs ғᴏʀ ☞ {search}\n\nʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ☞ {message.from_user.mention}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title} \n\n⚠️ ᴀғᴛᴇʀ 𝟻 ᴍɪɴᴜᴛᴇs ᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n</b>"
+            cap = f"<b>ʀᴇsᴜʟᴛs ғᴏʀ ☞ {search}\n\nʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ☞ {message.from_user.mention}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title}</b>"
         else:
-            cap = f"<b>ʀᴇsᴜʟᴛs ғᴏʀ ☞ {search}\n\nʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ☞ {message.from_user.mention}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title} \n\n⚠️ ᴀғᴛᴇʀ 𝟻 ᴍɪɴᴜᴛᴇs ᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n</b>"
+            cap = f"<b>ʀᴇsᴜʟᴛs ғᴏʀ ☞ {search}\n\nʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ☞ {message.from_user.mention}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title}</b>"
             cap+="<b><u>📚 ʀᴇǫᴜᴇsᴛᴇᴅ ғɪʟᴇs 👇</u></b>\n\n"
             for file in files:
                 cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
