@@ -200,7 +200,9 @@ sᴇʀɪᴇs / ᴀɴɪᴍᴇ ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ
 @TheInsomniacsClub</b>"""
     
     IMDB_TEMPLATE_TXT = """
-<b>Query: {query}
+<b>ʀᴇsᴜʟᴛs ғᴏʀ ☞ {search}
+
+ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ☞ {message.from_user.mention}
 
 IMDb Data:
 🏷 Title: <a href={url}>{title}</a>
