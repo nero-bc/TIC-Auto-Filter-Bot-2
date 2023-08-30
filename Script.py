@@ -200,13 +200,18 @@ sᴇʀɪᴇs / ᴀɴɪᴍᴇ ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ
 @TheInsomniacsClub</b>"""
     
     IMDB_TEMPLATE_TXT = """
-<b>⚡️ ʀᴇsᴜʟᴛs ғᴏʀ ☞ {search}
+<b>⚡️ ʀᴇsᴜʟᴛs ғᴏʀ ☞  {search}
 
-IMDb Data:
-🏷 Title: <a href={url}>{title}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 [ {votes} Votes]
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
+
+ɪᴍᴅʙ ᴅᴀᴛᴀ:
+
+🏷 ᴛɪᴛʟᴇ : <a href={url}>{title}</a>
+
+🌟 ʀᴀᴛɪɴɢ : <a href={url}/ratings>{rating}</a> / 10 [Based on {votes} Votes]
+
+🎭 ɢᴇɴʀᴇs : {genres}
+
+📆 ʀᴇʟᴇᴀsᴇ ʏᴇᴀʀ : <a href={url}/releaseinfo>{year}</a>
 </b>"""
     
     ALL_FILTERS = """
