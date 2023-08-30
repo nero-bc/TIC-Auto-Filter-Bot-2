@@ -33,6 +33,10 @@ async def save_group(bot, message):
                 pass
             await bot.leave_chat(message.chat.id)
             return
+        buttons = [[
+                    InlineKeyboardButton("❆ ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ❆", url="https://t.me/TheInsomniacsClub")
+                  ]]
+        reply_markup=InlineKeyboardMarkup(buttons) 
         await message.reply_text(
             text=f"<b>ᴛʜᴀɴᴋʏᴏᴜ ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ɪɴ {message.chat.title} ❣️\n\nɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs & ᴅᴏᴜʙᴛs ᴀʙᴏᴜᴛ ᴜsɪɴɢ ᴍᴇ ᴄᴏɴᴛᴀᴄᴛ sᴜᴘᴘᴏʀᴛ.</b>",
             reply_markup=reply_markup)
