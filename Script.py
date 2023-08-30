@@ -204,7 +204,7 @@ sᴇʀɪᴇs / ᴀɴɪᴍᴇ ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ
 
 IMDb Data:
 🏷 Title: <a href={url}>{title}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 [ {votes} Votes]
 🎭 Genres: {genres}
 📆 Year: <a href={url}/releaseinfo>{year}</a>
 </b>"""
