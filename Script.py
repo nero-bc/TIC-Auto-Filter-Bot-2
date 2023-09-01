@@ -212,7 +212,7 @@ sᴇʀɪᴇs / ᴀɴɪᴍᴇ ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ
     IMDB_TEMPLATE_TXT = """
 <b>📚 ʀᴇsᴜʟᴛs ғᴏʀ ☞  {search}
 
-🔖ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ☞ {message.from_user.mention}
+🔖 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ☞ {message.from_user.mention}
 
 ɪᴍᴅʙ ᴅᴀᴛᴀ:
 🏷 ᴛɪᴛʟᴇ : <a href={url}>{title}</a>
