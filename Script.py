@@ -137,7 +137,17 @@ Language</b>"""
     I_CUD_NT = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ғɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}.
 ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ ɪɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ..."""
 
-    MVE_NT_FND = """ғɪʟᴇs ɴᴏᴛ ғᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀsᴇ..."""
+    MVE_NT_FND = """<b>sᴏʀʀʏ ɴᴏ ғɪʟᴇs ᴡᴇʀᴇ ғᴏᴜɴᴅ ғᴏʀ ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ {} 😕
+
+ɪғ ᴛʜᴇ ғɪʟᴇs ᴀʀᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴇᴠᴇɴ ᴀғᴛᴇʀ ᴜsɪɴɢ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ
+ᴀʟsᴏ ɪᴛ sʜᴏᴜʟᴅ ʜᴀᴠᴇ ʙᴇᴇɴ ʀᴇʟᴇᴀsᴇᴅ ɪɴ ᴀɴʏ ᴏᴛᴛ
+ᴛʜᴇɴ ʀᴇǫᴜᴇsᴛ ᴜs ᴡᴇ ᴡɪʟʟ ᴜᴘʟᴏᴀᴅ ᴀsᴀᴘ
+
+ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ :
+@admin 
+Name of Movie / Series / Anime
+Year
+Language</b>"""
 
     TOP_ALRT_MSG = """ᴄʜᴇᴄᴋɪɴɢ ғᴏʀ ғɪʟᴇs ɪɴ ᴅᴀᴛᴀʙᴀsᴇ..."""
 
@@ -200,19 +210,15 @@ sᴇʀɪᴇs / ᴀɴɪᴍᴇ ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ
 @TheInsomniacsClub</b>"""
     
     IMDB_TEMPLATE_TXT = """
-<b>⚡️ ʀᴇsᴜʟᴛs ғᴏʀ ☞  {search}
+<b>📚 ʀᴇsᴜʟᴛs ғᴏʀ ☞  {search}
 
+🔖ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ☞ {message.from_user.mention}
 
 ɪᴍᴅʙ ᴅᴀᴛᴀ:
-
 🏷 ᴛɪᴛʟᴇ : <a href={url}>{title}</a>
-
 🌟 ʀᴀᴛɪɴɢ : <a href={url}/ratings>{rating}</a> / 10 [Based on {votes} Votes]
-
 🎭 ɢᴇɴʀᴇs : {genres}
-
-📆 ʀᴇʟᴇᴀsᴇ ʏᴇᴀʀ : <a href={url}/releaseinfo>{year}</a>
-</b>"""
+📆 ʀᴇʟᴇᴀsᴇ ʏᴇᴀʀ : <a href={url}/releaseinfo>{year}</a></b>"""
     
     ALL_FILTERS = """
 <b>ʜᴇʏ {}, ᴛʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
@@ -241,6 +247,4 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 📅 Dᴀᴛᴇ : <code>{}</code>
 ⏰ Tɪᴍᴇ : <code>{}</code></b>"""
 
-    LOGO = """
-▀█▀ █░█ █▀▀ █ █▄░█ █▀ █▀█ █▀▄▀█ █ ▄▀█ █▀▀ █▀ █▀▀ █░░ █░█ █▄▄
-░█░ █▀█ ██▄ █ █░▀█ ▄█ █▄█ █░▀░█ █ █▀█ █▄▄ ▄█ █▄▄ █▄▄ █▄█ █▄█"""
+    LOGO = """TheInsomniacsClub"""
